@@ -62,7 +62,7 @@
 textarea
 {
     width:95%;
-    height: 250px;
+    height: 180px;
     font-size: 15px;
     border:0;
     outline:0;
@@ -107,9 +107,19 @@ button{
     align-items: center;
 }
 button img{
-    width :16px;
+    max-width: 16px;
     margin-right: 10px;
 
+}
+@media screen and (max-width: 491px) {
+    button span {
+        display: none;
+    }
+    button img {
+        margin: 0px; /* Show the image */
+    }
+
+   
 }
 select{
     flex:1;
